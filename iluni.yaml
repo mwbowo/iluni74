@@ -1,17 +1,15 @@
-version: '2'
+version: '3'
 services:
-  nginx:
-    image: nginx:1.11.10-alpine
-    ports:
-      - 80:80
-    #volumes:
-      #- ./nginx.conf:/etc/nginx/conf.d/default.conf
   web:
     container_name: iluni-web
-    image: php:5.6.30-fpm-alpine
-    depends_on:
-      - nginx
+    image: php:7.4-apache
     ports:
-      - 9000:9000
+      - "8081:80"
     volumes:
       - ./doc:/var/www/html
+    networks:
+      - vaf
+
+networks:
+    vaf:
+      name: vaf
