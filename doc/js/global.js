@@ -6,9 +6,9 @@ $( function() {
 	$.vegas( 'slideshow', {
 		delay: 8000,
 		backgrounds: [
-			{ src: 'images/background4.jpg', fade: 4000 },
-			{ src: 'images/background3.jpg', fade: 4000 },
-			{ src: 'images/background2.jpg', fade: 4000 },
+			{ src: 'images/slide4.png', fade: 4000 },
+			{ src: 'images/slide3.png', fade: 4000 },
+			{ src: 'images/slide2.png', fade: 4000 },
 			{ src: 'images/slide1.png', fade: 4000 }
 		]
 	} )( 'overlay' );
@@ -20,7 +20,7 @@ $( function() {
         $('.countdown.styled').countdown({
           date: endDate,
           render: function(data) {
-            $(this.el).html("<div>" + this.leadingZeros(data.days, 3) + " <span>days</span></div><div>" + this.leadingZeros(data.hours, 2) + " <span>hrs</span></div><div>" + this.leadingZeros(data.min, 2) + " <span>min</span></div><div>" + this.leadingZeros(data.sec, 2) + " <span>sec</span></div>");
+            $(this.el).html("<div>" + this.leadingZeros(data.days, 2) + " <span>days</span></div><div>" + this.leadingZeros(data.hours, 2) + " <span>hrs</span></div><div>" + this.leadingZeros(data.min, 2) + " <span>min</span></div><div>" + this.leadingZeros(data.sec, 2) + " <span>sec</span></div>");
           }
         });
 
