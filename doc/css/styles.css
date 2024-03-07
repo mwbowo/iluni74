@@ -25,6 +25,15 @@ h1 {
 	float: left;
 	margin-left:15px;
 }
+teks {
+	font-size:38px;
+	letter-spacing:1px;	
+	line-height:70px;
+	margin:25px 0;
+	text-shadow:0 3px 3px #000;
+	float: left;
+	margin-left:15px;
+}
 .ie h1 {
 	filter: dropshadow(color=#000000, offx=0, offy=3);
 	padding-bottom:12px;	
