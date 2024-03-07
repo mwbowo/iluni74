@@ -4,7 +4,7 @@ Note: Please use our back link in your site
 */
 $( function() {
 	$.vegas( 'slideshow', {
-		delay: 8000,
+		delay: 6000,
 		backgrounds: [
 			{ src: 'images/slide1.png', fade: 4000 },
 			{ src: 'images/slide3.png', fade: 4000 },
