@@ -6,10 +6,10 @@ $( function() {
 	$.vegas( 'slideshow', {
 		delay: 8000,
 		backgrounds: [
-			{ src: 'images/slide4.png', fade: 4000 },
+			{ src: 'images/slide1.png', fade: 4000 },
 			{ src: 'images/slide3.png', fade: 4000 },
 			{ src: 'images/slide2.png', fade: 4000 },
-			{ src: 'images/slide1.jpeg', fade: 4000 }
+			{ src: 'images/slide4.png', fade: 4000 }
 		]
 	} )( 'overlay' );
 	
